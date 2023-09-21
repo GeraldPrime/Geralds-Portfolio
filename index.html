@@ -642,7 +642,7 @@
                     msg.innerHTML = 'Your message has been sent successfully.';
                     setTimeout(function () {
                         msg.innerHTML = '';
-                    }, 2000);
+                    }, 5000);
                     form.reset();
                     sendButton.value = 'Send'; // Revert to "Send" after success
                     sendButton.disabled = false; // Enable the button
@@ -651,7 +651,7 @@
                     msg.innerHTML = '<span style="color: red;">Something went wrong, message not sent.</span>';
                     setTimeout(function () {
                        
-                    }, 2000);
+                    }, 5000);
                    
                     sendButton.value = 'Send'; // Revert to "Send" after error
                     sendButton.disabled = false; // Enable the button
