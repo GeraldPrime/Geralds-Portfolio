@@ -5,7 +5,8 @@ jQuery(document).ready(function() {
         stringsElement: $('.typed-strings'),
         typeSpeed: 100,
         backDelay: 500,
-        loop: true,
+        cursorChar: '_',
+        loop: false,
         contentType: 'html', // or text
         // defaults to false for infinite loop
         loopCount: false,

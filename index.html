@@ -108,12 +108,11 @@
                                         <p class="lead"><span class="id-color">Hi, welcome to my personal
                                                 website.</span></p>
                                         <div class="spacer20"></div>
-                                        <div class="h1_big">My name Gerald Okeke, a
+                                        <div class="h1_big">My name is Gerald, a
                                             <br> Certified and Experienced
                                             <div class="typed-strings">
-                                                <p>Programmer</p>
-                                                <p>Designer</p>
-                                                <p>Enthusiast 😊.... feel free to explore</p>
+                                                <p>Programmer and Designer Driven by Enthusiasm. Feel Free to Explore </p>
+                                                
                                             </div>
                                             <div class="typed"></div>
                                         </div>
@@ -152,8 +151,8 @@
                                             <div class="text">
                                                 <i class="icon_lightbulb id-color"></i>
                                                 <h3>Conceptual Design</h3> Unleashing Creativity: Where Imagination
-                                                meets innovtion- Crafting Tomorrows ideas today in my visionary world of
-                                                conceptual designs
+                                                meets innovation- Crafting Tomorrows ideas today in my visionary world of
+                                                conceptual designs.
                                             </div>
                                             <i class="big icon_lightbulb id-color"></i>
                                         </div>
@@ -167,7 +166,7 @@
                                                 <i class="icon_flowchart_alt id-color"></i>
                                                 <h3>Market Inteligence</h3> Unlocking opportunities: Navigating the
                                                 world of Market inteligence, empowering decision making and providing a
-                                                special guide, Charting success in a data-driven world
+                                                special guide, Charting success in a data-driven world.
                                             </div>
                                             <i class="big icon_flowchart_alt id-color"></i>
                                         </div>
@@ -181,7 +180,7 @@
                                                 <iconify-icon icon="charm:stack" width="45" height="45"
                                                     class="id-color"></iconify-icon>
                                                 <h3>Full Stack Developement</h3> 🛠️ Armed with a comprehensive toolkit
-                                                of coding mastery, [Your Name] seamlessly navigates the intricate web of
+                                                of coding mastery, I seamlessly navigates the intricate web of
                                                 front-end finesse and back-end brilliance. From crafting pixel-perfect
                                                 user interfaces to engineering robust databases,
                                                 every project becomes a thrilling journey toward digital perfection.
@@ -198,7 +197,7 @@
                                                 <i class="fa-brands fa-python fa-xl" width="45" height="45"></i>
                                                 <iconify-icon icon="simple-icons:python" width="45" height="45"
                                                     class="id-color mb30"></iconify-icon>
-                                                <h3>Python Projects</h3> 🚀 Innovation ans Versatility: From web
+                                                <h3>Python Projects</h3> 🚀 Innovation and Versatility: From web
                                                 development using Django and Flask to data analysis with pandas,
                                                 scikit-learn, and matplotlib, I've explored
                                                 Python's vast ecosystem and can navigate it with ease. Whether it's
@@ -237,7 +236,7 @@
                                                 <i class="icon_cogs id-color"></i>
                                                 <h3>Mechanical Engineering</h3> Engeneering Tomorrow: Bridging
                                                 innovation and precision in crafting the future through programming
-                                                possibilities, building tomorrows digital world
+                                                possibilities, building tomorrows digital world.
                                             </div>
                                             <i class="big icon_cogs id-color"></i>
                                         </div>
@@ -293,19 +292,19 @@
                                                     <h4>Product Designer Freelancer</h4>
                                                     <p>Versatile freelancer and open to new horizons. Crafting digital
                                                         excellence with every opportunity.I do contractual projects and
-                                                        maintenances</p>
+                                                        maintenances.</p>
                                                 </div>
                                                 <div class="exp-box">
                                                     <h5>2022</h5>
                                                     <h4>Faculty(lecturer) @ Aptech Enugu</h4>
                                                     <p>Lecturing and tutoring have always been part of my Versatility. I
-                                                        believe Sharing knowlage secures our tomorrow</p>
+                                                        believe Sharing knowlage secures our tomorrow.</p>
                                                 </div>
                                                 <div class="exp-box">
                                                     <h5>Others</h5>
                                                     <h4>UI/UX</h4>
-                                                    <p>I make and publish designson my social media handles. Both for
-                                                        science and income</p>
+                                                    <p>I make and publish designs on my social media handles. Both for
+                                                        science and income.</p>
                                                 </div>
                                             </div>
 
@@ -532,7 +531,7 @@
                     <div class="container-fluid">
                         <div class="row-fluid table">
                             <div class="col-md-6 va-top">
-                                <div class="img-fx">
+                                <div class="img-fx contact-img">
                                     <img src="images/misc/4.jpg" alt="">
                                     <div class="img-url"></div>
                                 </div>
@@ -626,23 +625,40 @@
     ================================================== -->
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbycSh65PYcILeM_wdHsQc-0acz97G5FclMJxOq_h5pn4y5aEGX40TZQ0PFffA--FkTwtA/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbycSh65PYcILeM_wdHsQc-0acz97G5FclMJxOq_h5pn4y5aEGX40TZQ0PFffA--FkTwtA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+        const sendButton = document.getElementById('send_message');
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
+
+            // Change the button text to "Sending" while processing
+            sendButton.value = 'Sending...';
+            sendButton.disabled = true; // Disable the button
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    msg.innerHTML = "Your message has been sent successfully." 
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
+                    msg.innerHTML = 'Your message has been sent successfully.';
+                    setTimeout(function () {
+                        msg.innerHTML = '';
+                    }, 2000);
+                    form.reset();
+                    sendButton.value = 'Send'; // Revert to "Send" after success
+                    sendButton.disabled = false; // Enable the button
                 })
-                .catch(error => console.error('Error!', error.message))
-        })
+                .catch(error => {
+                    msg.innerHTML = '<span style="color: red;">Something went wrong, message not sent.</span>';
+                    setTimeout(function () {
+                       
+                    }, 2000);
+                   
+                    sendButton.value = 'Send'; // Revert to "Send" after error
+                    sendButton.disabled = false; // Enable the button
+                });
+        });
     </script>
+
 
 
     <script src="js/jquery.min.js"></script>

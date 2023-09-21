@@ -7246,7 +7246,7 @@ section.no-padding {
 .owl-arrow .next:before {
     font-family: "FontAwesome";
     content: '\f177';
-    color: #2;
+    /* color: #2; */
     padding: 20px;
     font-size: 32px;
     display: block;
@@ -8681,6 +8681,9 @@ img {
     .img-fx img {
         display: block;
         width: 100%;
+    }
+    .contact-img{
+        display: none;
     }
     
     .text-center-sm {
