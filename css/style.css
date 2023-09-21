@@ -8685,6 +8685,9 @@ img {
     .contact-img{
         display: none;
     }
+    .for-services{
+        height: 180px;
+    }
     
     .text-center-sm {
         text-align: center;
