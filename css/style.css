@@ -9415,6 +9415,9 @@ img {
         width: 100% !important;
     }
     
+    .page-deco{
+        right:-50px;
+    }
     .text-item {
         font-size: 32px;
         line-height: 32px;
