@@ -127,6 +127,18 @@ const projects = [
     highlight: 'Digital Innovation'
   },
   {
+    title: 'Maxxwallpaper — Interior Design',
+    category: 'Web',
+    description: 'Business website for Maxxwallpaper, a premium wallpaper and interior design company based in Abuja, Nigeria. Features an online shop, services showcase, appointment booking, and an elegant dark-themed UI that reflects the brand\'s identity — "Transforming Spaces, One Wall at a Time."',
+    tech: ['Next.js', 'React', 'Tailwind', 'Vercel'],
+    links: { web: 'https://maxxwallpaper.vercel.app' },
+    image: '/images/projects/maxwallpaper.png',
+    bgColor: '#1a1410',
+    accentColor: '#d4a04a',
+    icon: '🏠',
+    highlight: 'Interior Design & Decor'
+  },
+  {
     title: 'VR Math Escape Room',
     category: 'VR / Game Dev',
     description: 'Immersive virtual reality escape room built with Unity where players solve math puzzles to progress through rooms. Features full VR interaction, 3D physics, spatial audio, and XR hand tracking. Built for Oculus/Meta headsets.',
