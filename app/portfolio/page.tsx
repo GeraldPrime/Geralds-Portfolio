@@ -36,6 +36,12 @@ const services = [
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind']
   },
   {
+    icon: '🎮',
+    title: 'VR & Game Development',
+    description: 'Immersive virtual reality experiences built with Unity. From interactive 3D environments to XR-powered educational games using Oculus SDK and the XR Interaction Toolkit.',
+    tags: ['Unity', 'C#', 'VR', 'Oculus SDK', 'XR Toolkit']
+  },
+  {
     icon: '🎨',
     title: 'UI/UX Design',
     description: 'User-centred interface design using Figma, Adobe Photoshop, and Illustrator. Translating designs into pixel-perfect, accessible code.',
@@ -119,6 +125,18 @@ const projects = [
     accentColor: '#6366f1',
     icon: '🌐',
     highlight: 'Digital Innovation'
+  },
+  {
+    title: 'VR Math Escape Room',
+    category: 'VR / Game Dev',
+    description: 'Immersive virtual reality escape room built with Unity where players solve math puzzles to progress through rooms. Features full VR interaction, 3D physics, spatial audio, and XR hand tracking. Built for Oculus/Meta headsets.',
+    tech: ['Unity', 'C#', 'VR', 'XR Interaction Toolkit', 'Oculus SDK', '3D Physics'],
+    links: { github: 'https://github.com/GeraldPrime/Unity-VR-Math-Excape-room' },
+    image: '/images/projects/unitygame.png',
+    bgColor: '#0f1f0f',
+    accentColor: '#22c55e',
+    icon: '🎮',
+    highlight: 'Immersive VR Experience'
   },
   {
     title: 'Precious Blood Chaplet',
@@ -313,6 +331,16 @@ export default function PortfolioPage() {
                         className="neu-btn-accent px-5 py-2 text-sm font-dm font-medium flex items-center gap-2"
                       >
                         <span>↗</span> Live Site
+                      </a>
+                    )}
+                    {project.links.github && (
+                      <a
+                        href={project.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="neu-btn px-5 py-2 text-sm font-dm font-medium text-neu-text flex items-center gap-2"
+                      >
+                        <span>⌥</span> GitHub
                       </a>
                     )}
                     {project.links.ios && (

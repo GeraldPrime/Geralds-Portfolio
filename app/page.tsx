@@ -11,6 +11,7 @@ const skills = [
   { category: 'Frontend', items: ['React', 'Angular', 'TypeScript', 'Tailwind CSS', 'HTML5', 'CSS3'], icon: '🎨', level: 90 },
   { category: 'Databases', items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Supabase', 'Firestore'], icon: '🗄️', level: 97 },
   { category: 'Architecture', items: ['Microservices', 'Distributed Systems', 'Web3', 'ERP Systems', 'GraphQL'], icon: '🏗️', level: 85 },
+  { category: 'Game Development', items: ['Unity', 'VR Development', 'C#', 'XR Interaction Toolkit', '3D Physics', 'Oculus SDK'], icon: '🎮', level: 80 },
 ]
 
 const experiences = [
@@ -163,7 +164,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <p className="font-dm text-neu-muted text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+              <p className="font-dm text-neu-muted text-base md:text-lg leading-relaxed mb-8 max-w-xl">
                 Senior Software Engineer with <strong className="text-neu-text">8+ years</strong> of experience
                 building production-grade mobile and web platforms. Expert in leading full platform
                 migrations to unified Flutter/Dart codebases, distributed systems architecture,
@@ -288,7 +289,7 @@ export default function HomePage() {
                 Engineering platforms that{' '}
                 <span className="gradient-text">scale & perform</span>
               </h2>
-              <div className="space-y-4 font-dm text-neu-muted leading-relaxed text-base md:text-lg">
+              <div className="space-y-4 font-dm text-neu-muted leading-relaxed">
                 <p>
                   I&apos;m a Senior Software Engineer based in <strong className="text-neu-text">Malta</strong>,
                   specializing in high-stakes mobile and web platform engineering. With 8+ years of
@@ -432,7 +433,7 @@ export default function HomePage() {
                       {exp.period}
                     </span>
                   </div>
-                  <p className="font-dm text-base text-neu-muted leading-relaxed mb-3">{exp.description}</p>
+                  <p className="font-dm text-sm text-neu-muted leading-relaxed mb-3">{exp.description}</p>
                   <div className="flex flex-wrap gap-1.5">
                     {exp.tags.map(tag => (
                       <span key={tag} className="tech-tag">{tag}</span>
@@ -456,7 +457,7 @@ export default function HomePage() {
             <h2 className="font-syne font-bold text-3xl md:text-4xl text-neu-text mt-4 mb-4">
               Got a project in mind?
             </h2>
-            <p className="font-dm text-neu-muted max-w-xl mx-auto mb-8 leading-relaxed text-base md:text-lg">
+            <p className="font-dm text-neu-muted max-w-xl mx-auto mb-8 leading-relaxed">
               Whether you need a mobile app, a scalable backend, or a complete enterprise platform —
               I build robust, production-grade systems that perform.
             </p>
