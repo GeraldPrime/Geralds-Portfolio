@@ -48,8 +48,8 @@ const experiences = [
 
 const stats = [
   { value: '8+', label: 'Years Experience' },
-  { value: '1K+', label: 'App Users' },
-  { value: '20+', label: 'Projects Delivered' },
+  { value: '100K+', label: 'App Users' },
+  { value: '40+', label: 'Projects Delivered' },
   { value: '99.9%', label: 'Uptime Record' },
 ]
 
