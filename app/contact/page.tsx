@@ -41,10 +41,21 @@ export default function ContactPage() {
       return
     }
     setStatus({ type: 'loading', message: 'Sending your message...' })
-    // Simulate send (replace with actual API call)
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    setStatus({ type: 'success', message: "Message sent! I'll get back to you within 24 hours." })
-    setForm({ name: '', email: '', subject: '', message: '' })
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (res.ok) {
+        setStatus({ type: 'success', message: "Message sent! I'll get back to you within 24 hours." })
+        setForm({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setStatus({ type: 'error', message: 'Something went wrong. Please try again or email me directly.' })
+      }
+    } catch {
+      setStatus({ type: 'error', message: 'Something went wrong. Please try again or email me directly.' })
+    }
   }
 
   const contactItems = [
