@@ -41,7 +41,7 @@ const experiences = [
     role: 'Tutor / Teacher',
     company: 'Annfab Academy',
     period: 'January 2017 — January 2019',
-    description: 'Transitioned traditional curriculum into technical modules focused on logical problem-solving and programming fundamentals.',
+    description: 'Transitioned traditional curriculum into technical modules focused on logical problem-solving and fundamentals.',
     tags: ['Teaching', 'Curriculum Design']
   }
 ]
@@ -74,6 +74,9 @@ export default function HomePage() {
     'Flutter & Mobile Specialist',
     'Full-Stack Developer',
     'Cloud & DevOps Engineer',
+    'Microservices Architect',
+    'Game Developer',
+    'ML & Big Data Enthusiast'
   ]
 
   useEffect(() => {
@@ -149,7 +152,7 @@ export default function HomePage() {
 
               <h1 className="font-syne font-bold text-4xl md:text-5xl xl:text-6xl text-neu-text leading-tight mb-4">
                 Hi, I&apos;m{' '}
-                <span className="gradient-text">Gerald Okeke</span>
+                <span className="gradient-text">Gerald</span>
               </h1>
 
               <div className="h-10 mb-6">
