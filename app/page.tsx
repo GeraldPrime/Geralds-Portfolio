@@ -12,6 +12,7 @@ const skills = [
   { category: 'Databases', items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Supabase', 'Firestore'], icon: '🗄️', level: 97 },
   { category: 'Architecture', items: ['Microservices', 'Distributed Systems', 'Web3', 'ERP Systems', 'GraphQL'], icon: '🏗️', level: 85 },
   { category: 'Game Development', items: ['Unity', 'VR Development', 'C#', 'XR Interaction Toolkit', '3D Physics', 'Oculus SDK'], icon: '🎮', level: 80 },
+  { category: 'ML & Big Data', items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Apache Spark', 'Hugging Face', 'OpenCV', 'Jupyter'], icon: '🧠', level: 85 },
 ]
 
 const experiences = [

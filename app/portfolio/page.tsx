@@ -36,6 +36,18 @@ const services = [
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind']
   },
   {
+    icon: '🧠',
+    title: 'Machine Learning & AI',
+    description: 'Training robust ML models and fine-tuning LLMs for real-world applications. Specialising in scientific and forensic data analysis, computer vision with OpenCV, and NLP pipelines using Hugging Face and PyTorch.',
+    tags: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Hugging Face', 'OpenCV', 'LLMs']
+  },
+  {
+    icon: '📊',
+    title: 'Big Data & Visualisation',
+    description: 'End-to-end big data pipelines using Apache Spark and Pandas. Turning complex datasets into clear, actionable insights through interactive visualisations with Matplotlib, Seaborn, and Jupyter notebooks.',
+    tags: ['Apache Spark', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Jupyter']
+  },
+  {
     icon: '🎮',
     title: 'VR & Game Development',
     description: 'Immersive virtual reality experiences built with Unity. From interactive 3D environments to XR-powered educational games using Oculus SDK and the XR Interaction Toolkit.',
