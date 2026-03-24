@@ -90,7 +90,7 @@ export default function Footer() {
             className="mt-6 pt-6 text-center text-xs text-neu-muted font-dm"
             style={{ borderTop: '1px solid rgba(184,190,200,0.4)' }}
           >
-            &copy; {year} Gerald Okeke. Built with Next.js &amp; Tailwind CSS.
+            &copy; {year} Geralddevs | All rights reserved.
           </div>
         </div>
       </div>
