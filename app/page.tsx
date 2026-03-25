@@ -329,6 +329,7 @@ export default function HomePage() {
                 { label: 'Email', value: 'geraldokeke68@gmail.com', icon: '✉️' },
                 { label: 'Phone', value: '+356 9999 1140', icon: '📞' },
                 { label: 'Education', value: 'BSc Computer Science — Wolverhampton', icon: '🎓' },
+                { label: 'Education', value: 'ADSE — Aptech India', icon: '🎓' },
                 { label: 'Award', value: '1st — TechWiz 4 International', icon: '🏆' },
                 { label: 'Availability', value: 'Open to opportunities', icon: '✅' },
               ].map(item => (
