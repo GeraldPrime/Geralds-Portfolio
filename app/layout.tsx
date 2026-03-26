@@ -5,14 +5,51 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Gerald Okeke — Senior Software Engineer',
-  description: 'Senior Software Engineer specializing in Flutter, mobile, web, and enterprise platforms. Based in Malta.',
-  keywords: ['Gerald Okeke', 'software engineer', 'Flutter developer', 'mobile developer', 'full stack', 'Malta'],
+  description: 'Gerald Okeke is a Senior Software Engineer based in Malta specializing in Flutter, mobile apps, web development, AI/ML, enterprise ERP systems, and cloud infrastructure. Available for freelance and full-time roles worldwide.',
+  keywords: [
+    // Name variants
+    'Gerald Okeke', 'Gerald', 'Gerald Devs', 'GeraldDev', 'gerald_devs', 'geralddev', 'GeraldPrime',
+    // Role titles
+    'software developer', 'software engineer', 'senior software engineer', 'full stack developer',
+    'full stack engineer', 'developer', 'programmer', 'coder', 'tech lead',
+    // Mobile
+    'Flutter developer', 'Flutter engineer', 'mobile developer', 'iOS developer', 'Android developer',
+    'cross-platform developer', 'React Native developer',
+    // Web
+    'web developer', 'Next.js developer', 'React developer', 'TypeScript developer',
+    'frontend developer', 'backend developer',
+    // AI/ML
+    'AI developer', 'ML engineer', 'machine learning engineer', 'artificial intelligence',
+    'LLM developer', 'data scientist', 'Python developer', 'TensorFlow', 'PyTorch',
+    // Backend
+    'Django developer', 'Node.js developer', 'API developer', 'backend engineer',
+    // Cloud / DevOps
+    'DevOps engineer', 'AWS developer', 'cloud engineer', 'Docker', 'Kubernetes',
+    // ERP / Enterprise
+    'ERP developer', 'enterprise software', 'fintech developer',
+    // VR / Game Dev
+    'Unity developer', 'VR developer', 'game developer',
+    // Location
+    'software engineer Malta', 'developer Malta', 'Nigeria developer', 'remote developer',
+    'freelance developer', 'freelance software engineer',
+    // General search terms
+    'hire developer', 'hire software engineer', 'portfolio', 'software portfolio',
+  ],
   authors: [{ name: 'Gerald Okeke' }],
+  creator: 'Gerald Okeke',
+  robots: { index: true, follow: true },
   openGraph: {
     title: 'Gerald Okeke — Senior Software Engineer',
-    description: 'Senior Software Engineer based in Malta. Flutter, Django, AWS, Next.js.',
-    type: 'website'
-  }
+    description: 'Senior Software Engineer based in Malta. Flutter, Django, AI/ML, AWS, Next.js, VR. Available for freelance and full-time roles.',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gerald Okeke — Senior Software Engineer',
+    description: 'Senior Software Engineer based in Malta. Flutter, Django, AI/ML, AWS, Next.js, VR.',
+    creator: '@gerald_devs',
+  },
 }
 
 export default function RootLayout({
